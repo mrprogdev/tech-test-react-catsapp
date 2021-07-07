@@ -1,0 +1,46 @@
+.boldFont {
+  font-family: "Avenir Next Bold", sans-serif;
+}
+
+.catCard {
+  width: 160px;
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+
+.catPhoto {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.catInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 25px 5px;
+  margin: 10px;
+  color: #143154;
+  font-family: "Avenir Next", sans-serif;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightCol {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.catName {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-weight: bold;
+  line-height: 19px;
+  font-size: 16px;
+}
+
+.catOwner {
+  font-size: 12px;
+  line-height: 14px;
+}
