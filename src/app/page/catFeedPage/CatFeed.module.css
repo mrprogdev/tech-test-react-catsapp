@@ -1,0 +1,87 @@
+.defaultFont {
+  font-family: "Avenir Next", sans-serif;
+}
+
+/*Feed Style*/
+
+.feedHeader {
+  font-size: 32px;
+  font-family: "Avenir Next Bold", sans-serif;
+  text-align: center;
+  color: #143154;
+  margin-top: 2rem;
+}
+
+.feedSubtitle {
+  font-size: 20px;
+  line-height: 24px;
+  color: #143154;
+  text-align: center;
+  margin-top: 0;
+}
+
+.btnGroup {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.activeBtn {
+  height: 36px;
+  width: 140px;
+  background-color: #143154;
+  border-radius: 44px;
+  border: 0;
+  color: white;
+}
+
+.feedBtn {
+  height: 40px;
+  width: 140px;
+  background-color: #e8eaee;
+  border-radius: 44px;
+  border: 0;
+  color: #143154;
+}
+
+.feedBtnText {
+  font-weight: bold;
+  font-family: "Avenir Next", sans-serif;
+  size: 14px;
+  line-height: 16px;
+}
+
+/*Feed Style*/
+.button1 {
+  height: 40px;
+  width: 140px;
+  background-color: #e8eaee;
+  border-radius: 44px;
+  border: 0;
+  color: #143154;
+}
+
+.button2 {
+  height: 40px;
+  width: 140px;
+  background-color: #e8eaee;
+  border-radius: 44px;
+  border: 0;
+  color: #143154;
+}
+
+.orange {
+  height: 40px;
+  width: 140px;
+  background-color: #143154;
+  border-radius: 44px;
+  border: 0;
+  color: white;
+}
+
+.textStyle {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #b3bdd2;
+}

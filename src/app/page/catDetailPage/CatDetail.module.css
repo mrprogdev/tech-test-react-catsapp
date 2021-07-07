@@ -1,0 +1,103 @@
+.container {
+  font-family: "Avenir Next", sans-serif;
+  color: #143154;
+  letter-spacing: 0em;
+  padding-bottom: 1rem;
+}
+
+.catImage {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.catDetailContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+
+.nameAgeContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.name {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+.age {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.catBio {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 24px 1rem;
+}
+
+.ownerBioContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  margin: 0 20px 0;
+  padding: 20px 20px;
+}
+
+.ownerName {
+  font-family: "Avenir Next Bold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.ownerBio {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  padding-top: 1rem;
+}
+
+.bioCol1,
+.bioCol2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bioCol1 > *,
+.bioCol2 > * {
+  padding: 0.4rem 0;
+}
+
+.bioCol1 {
+  padding: 0 1.5rem 0 0;
+}
+
+/*.ownerPhone, .ownerEmail, .ownerAddress {*/
+/*    padding: 0.3rem 0;*/
+/*}*/
+
+.altFont {
+  font-weight: 400;
+  color: #7b9abf;
+}
