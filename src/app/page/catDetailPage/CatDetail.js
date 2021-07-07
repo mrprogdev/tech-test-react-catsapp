@@ -82,12 +82,7 @@ const CatDetail = (props) => {
         </div>
         <div
           style={{ marginTop: "10px" }}
-          onClick={() =>
-            // data.fetchCat.is_liked
-            //   ? dispatch(unlikeCat(data.fetchCat.id))
-            //   : dispatch(likeCat(data.fetchCat))
-            likeButtonAction(likebtnStatus)
-          }
+          onClick={() => likeButtonAction(likebtnStatus)}
         >
           {likebtnStatus ? (
             <svg
