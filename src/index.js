@@ -2,12 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import './index.css';
 
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "./shared/ScrollToTop";
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+} from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: "https://server-cat-mongo.herokuapp.com/",
+  cache: new InMemoryCache()
+});
 
 ReactDOM.render(
   <Provider store={store}>
@@ -18,7 +31,9 @@ ReactDOM.render(
         <meta property="og:site_name" content="Ivo Digital Starter Project" />
       </Helmet>
       <ScrollToTop>
-        <App />
+        <ApolloProvider client={client}>
+          <App />
+        </ApolloProvider>
       </ScrollToTop>
     </Router>
   </Provider>,

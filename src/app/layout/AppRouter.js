@@ -1,10 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import DemoPage from "../DemoPage";
+import CatFeed from "../page/catFeedPage/CatFeed"
+import CatDetail from "../page/catDetailPage/CatDetail"
+// import DemoPage from "../DemoPage";
 
 const AppRouter = () => (
   <Switch>
-    <Route component={DemoPage} />
+    <Route exact path="/" component={CatFeed} />
+    <Route path="/detail/:catId" component={CatDetail} />
   </Switch>
 );
 
