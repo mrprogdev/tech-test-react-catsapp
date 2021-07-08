@@ -4,8 +4,6 @@ import CatFeedCSS from "./CatFeed.module.css";
 import { Grid, Container } from "@material-ui/core";
 
 const CatFeedDetail = (props) => {
-  console.log(props);
-
   const [isLiked, setIsLiked] = useState(false);
   const cats = useMemo(() => {
     if (isLiked) {
@@ -13,7 +11,7 @@ const CatFeedDetail = (props) => {
     } else {
       return props.data.fetchCats;
     }
-  }, [isLiked]);
+  }, [isLiked, props.data.fetchCats]);
 
   return (
     <Container>
@@ -40,7 +38,6 @@ const CatFeedDetail = (props) => {
           >
             <Grid item xs={6}>
               <button
-                className={CatFeedCSS.activeBtn}
                 className={isLiked ? CatFeedCSS.button1 : CatFeedCSS.orange}
                 onClick={() => setIsLiked(false)}
               >
@@ -49,7 +46,6 @@ const CatFeedDetail = (props) => {
             </Grid>
             <Grid item xs={6}>
               <button
-                className={CatFeedCSS.activeBtn}
                 className={isLiked ? CatFeedCSS.orange : CatFeedCSS.button2}
                 onClick={() => setIsLiked(true)}
               >
@@ -62,16 +58,7 @@ const CatFeedDetail = (props) => {
 
       <Grid style={{ marginTop: "25px" }} container spacing={2}>
         {cats.map(
-          ({
-            id,
-            name,
-            age,
-            description,
-            is_liked,
-            image_url,
-            owner,
-            background_color
-          }) => (
+          ({ id, name, age, is_liked, image_url, background_color }) => (
             <Grid key={id} item xs={6}>
               <CatCard
                 key={id}
@@ -79,13 +66,8 @@ const CatFeedDetail = (props) => {
                 image={image_url}
                 age={age}
                 is_liked={is_liked}
-                description={description}
                 catName={name}
                 catBackgroundColor={background_color}
-                ownerName={owner[0].name}
-                ownerPhone={owner[0].phone}
-                ownerEmail={owner[0].email}
-                ownerAddress={owner[0].address}
               ></CatCard>
             </Grid>
           )

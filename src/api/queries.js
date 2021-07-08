@@ -20,6 +20,26 @@ export const GET_ALL_CATS = gql`
   }
 `;
 
+export const GET_CAT = gql`
+  query FetchCat($id: Int) {
+    fetchCat(id: $id) {
+      id
+      name
+      age
+      image_url
+      is_liked
+      description
+      background_color
+      owner {
+        name
+        phone
+        email
+        address
+      }
+    }
+  }
+`;
+
 export const UPDATE_LIKE_CAT = gql`
   mutation LikeCat($id: Int) {
     likeCat(id: $id) {
