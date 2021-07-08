@@ -2,8 +2,6 @@
   font-family: "Avenir Next", sans-serif;
 }
 
-/*Feed Style*/
-
 .feedHeader {
   font-size: 32px;
   font-family: "Avenir Next Bold", sans-serif;
@@ -50,7 +48,6 @@
   line-height: 16px;
 }
 
-/*Feed Style*/
 .button1 {
   height: 40px;
   width: 140px;

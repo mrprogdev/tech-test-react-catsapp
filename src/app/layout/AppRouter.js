@@ -1,8 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import CatFeed from "../page/catFeedPage/CatFeed"
-import CatDetail from "../page/catDetailPage/CatDetail"
-// import DemoPage from "../DemoPage";
+import CatFeed from "../page/catFeedPage/CatFeed";
+import CatDetail from "../page/catDetailPage/CatDetail";
 
 const AppRouter = () => (
   <Switch>
